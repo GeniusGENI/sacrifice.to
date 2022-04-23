@@ -42,7 +42,7 @@ body{
 	display:inline-block;
 	padding:10px 20px;
 	border: 2px solid #dfdfdf;
-	margin-right: 20px;
+	margin-right: 5px;
 	text-decoration: none;
 	color: #353152;
 }
@@ -106,7 +106,7 @@ p{
 	/*background-color: #fab468;*/
 	background: linear-gradient(to right,#f25c51,#ffd836);
 	padding-left: 15px;
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 }
 .block-quote{
 	background: linear-gradient(to right,#353152,#dfdfdf);
