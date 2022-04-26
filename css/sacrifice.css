@@ -102,6 +102,9 @@ p{
 	color: #353152;
 	font-size: 1.2rem;
 }
+a.link-content{
+	display: contents;
+}
 .quote{
 	/*background-color: #fab468;*/
 	background: linear-gradient(to right,#f25c51,#ffd836);
