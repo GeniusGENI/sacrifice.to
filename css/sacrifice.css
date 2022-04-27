@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@300;600;700&display=swap');
+@import url("https://use.typekit.net/okr1cny.css");
+
 body{
 	/*background-color: #faa840;
 	width: 85%;
@@ -5,21 +9,17 @@ body{
 	background: #dfdfdf;
 	margin: 0;
 	padding:0;
-	font-size: 14px;
+	font-size: 10px;
 }
 .disclaimer{
 	background:url('images/dis-back.png');
 	background-position: center;
 	background-size:cover;
 }
-@font-face {
-    font-family: 'aleo-bold';
-    src: url('fonts/Aleo-Bold.ttf');
-}
 
 .navbar
 {
-	max-width: 1200px;
+	max-width: 1024px;
 	margin: 0 auto;
 	display: flex;
     justify-content: space-between;
@@ -32,7 +32,7 @@ body{
 .main-menu{
 	margin: 0;
 	padding: 0;
-	widows: 100%;
+	display: contents;
 }
 .main-menu li{
 	list-style: none;
@@ -40,11 +40,14 @@ body{
 }
 .main-menu li a{
 	display:inline-block;
-	padding:10px 20px;
+	padding:5px 5px;
 	border: 2px solid #dfdfdf;
 	margin-right: 5px;
 	text-decoration: none;
-	color: #353152;
+	color: #35314e;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 0.8rem;
 }
 
 .disclaimer .main-menu li a{
@@ -62,19 +65,53 @@ body{
 }
 
 .container{
-	max-width: 1200px;
+	max-width: 920px;
 	margin: 0 auto;
 	padding: 10px;
+	
+}
+.row{
+	display: flex;
+	
+}
+.col{
+	display: flex;
+	float: left;
+	flex-direction: column;
+	justify-content: center;
+}
+.banner{
+	background:url("../img/block-bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	padding: 20px 0px;
+}
+.banner-text{
+	font-family: 'Aleo', serif;
+	font-size: 2rem;
+	padding: 0;
+	margin: 0;
+}
+.banner-bold{
+	font-weight: bold;
 }
 .block-title{
 	display: block;
-	font-family: aleo-bold;
-	font-size: 3rem;
+	font-family: 'Aleo', serif;
+	font-size: 2.7rem;
 	color: #353152;
-	border-bottom: 2px solid #d0d0d0;
+	
 	display: inline;
 	margin-bottom: 5px;
 	padding-right: 25px;
+}
+.blk-title{
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #d0d0d0;
 }
 .block-title-disclaimer{
 	font-family: aleo-bold;
@@ -100,16 +137,34 @@ h3+p{
 }
 p{
 	color: #353152;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
+	font-family: 'Aleo', serif;
+	font-weight: lighter;
 }
 a.link-content{
 	display: contents;
 }
 .quote{
 	/*background-color: #fab468;*/
-	background: linear-gradient(to right,#f25c51,#ffd836);
-	padding-left: 15px;
-	font-size: 1.5rem;
+	background: #ffffff;
+	border: none;
+	border-radius:100px;
+	padding: 5px ;
+	font-size: 1.2rem;
+	font-family: 'Open Sans', sans-serif;
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+}
+.quote .quote-ico{
+	display: block;
+	padding: 0 20px 0px 10px;
+	
+}
+.quote .tbold{
+	font-weight: bold;
+	padding-left: 20px;
+	display:contents;
 }
 .block-quote{
 	background: linear-gradient(to right,#353152,#dfdfdf);
@@ -118,14 +173,37 @@ a.link-content{
 	font-size: 1.7rem;
 	display: block;
 	padding: 5px 10px;
-	margin-left: -10px;
+	margin-left: -30px;
 	color: #ffffff;
+}
+.quote .content{
+	display: block;
+	font-family: 'Aleo', serif;
+	font-size: 0.8rem;
+	padding: 15px;
+	color: #353152;
+	font-weight:bold ;
+}
+.quote .content a{
+	color: #353152;
+}
+.md5{
+	width: 50%;
+}
+.md7{
+	width: 70%;
+}
+.md3{
+	width: 30%;
 }
 .mark{
 	border: 3px solid #353152;
-	padding: 20px 10px;
+	padding: 10px 30px 10px 30px;
 	border-radius: 10px;
 	margin-bottom: 30px;
+	color: #353152;;
+	font-size: 1.5rem;
+	font-family: 'Aleo', serif;
 }
 .icon-list{
 	list-style: none;
@@ -136,6 +214,8 @@ a.link-content{
 	padding: 20px 10px;
 	display: flex;
 	align-items: center;
+	font-family: 'Aleo', serif;
+	color: #353152;
 }
 .list-ico{
 	padding-right: 25px;
@@ -144,12 +224,14 @@ a.link-content{
 	color: #353152;
 	font-size: 1.2rem;
 	padding-left: 40px;
+	font-weight: bold;
 }
 
 .list-white {
   list-style: none;
   color: #353152;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .list-white li::before {
@@ -182,7 +264,7 @@ a.link-content{
 }
 .social-icos li .net{
 	color: #faa840;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	text-decoration: none;
 }
 .f-menu{
@@ -200,4 +282,5 @@ a.link-content{
 }
 .footer .copy p{
 	color: #ffffff;
+	font-size: 0.8rem;
 }
