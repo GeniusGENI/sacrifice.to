@@ -65,7 +65,7 @@ body{
 }
 
 .container{
-	max-width: 920px;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 10px;
 	
@@ -94,6 +94,9 @@ body{
 	padding: 0;
 	margin: 0;
 }
+.banner-link{
+	padding: 10px 5px;
+}
 .banner-bold{
 	font-weight: bold;
 }
@@ -102,10 +105,9 @@ body{
 	font-family: 'Aleo', serif;
 	font-size: 2.7rem;
 	color: #353152;
-	
 	display: inline;
 	margin-bottom: 5px;
-	padding-right: 25px;
+	padding-left: 15px;
 }
 .blk-title{
 	display: flex;
@@ -155,6 +157,7 @@ a.link-content{
 	display:flex;
 	flex-direction: row;
 	align-items: center;
+	margin-bottom: 50px;
 }
 .quote .quote-ico{
 	display: block;
@@ -178,14 +181,35 @@ a.link-content{
 }
 .quote .content{
 	display: block;
+	position: relative;
 	font-family: 'Aleo', serif;
-	font-size: 0.8rem;
+	font-size: 1.1rem;
 	padding: 15px;
 	color: #353152;
 	font-weight:bold ;
+	line-height: 22px;
 }
 .quote .content a{
 	color: #353152;
+	display: inline-block;
+	position: absolute;
+	bottom: 5px;
+}
+.quote-notice{
+	/*background-color: #fab468;*/
+	background: #353152;
+	border: none;
+	border-radius:100px;
+	padding: 5px 15px ;
+	font-size: 1.2rem;
+	font-family: 'Open Sans', sans-serif;
+	display:inline-flex;
+	position: relative;
+	align-items: flex-start;
+	color: #ffffff;
+}
+.quote-notice .link-notice{
+
 }
 .md5{
 	width: 50%;
