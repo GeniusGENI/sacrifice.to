@@ -16,60 +16,47 @@ body{
 	background-position: center;
 	background-size:cover;
 }
-
-.navbar
-{
-	max-width: 1024px;
-	margin: 0 auto;
-	display: flex;
-    justify-content: space-between;
-  	align-items: flex-end;
-  	margin-bottom: 10px;
-  	padding-top:20px ;
-  	padding-bottom: 50px;
+.custom-toggler .navbar-toggler-icon {
+  background: url("../img/menu30x30.png");
 }
 
-.main-menu{
-	margin: 0;
-	padding: 0;
-	display: contents;
+.custom-toggler.navbar-toggler {
+  border: 1px solid black;
+} 
+.main-menu li {
+    list-style: none;
+    display: flex;
+    align-items: center;
 }
-.main-menu li{
-	list-style: none;
-	display: inline;
-}
+
 .main-menu li a{
 	display:inline-block;
 	padding:5px 5px;
 	border: 2px solid #dfdfdf;
 	margin-right: 5px;
 	text-decoration: none;
-	color: #35314e;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
-	font-size: 0.8rem;
+	font-size: 1rem;
+	color:#353152;
 }
 
 .disclaimer .main-menu li a{
 	border: 2px solid #f9774d;
+	color:#353152;
+}
+.nav-link:focus, .nav-link:hover {
+   border: 2px solid #f9774d;
+	border-radius: 10px;
+	color:#353152;
 }
 
-.main-menu li a:hover{
-	border: 2px solid #f9774d;
-	border-radius: 10px;
-}
-.main-menu .ico,.main-menu .ico:hover{
-	padding:5px 5px;
-	border: none;
+.nav-link.ico,.nav-link.ico:hover{
+	border: 2px solid #dfdfdf;
 	margin-right: 0;
 }
 
-.container{
-	max-width: 920px;
-	margin: 0 auto;
-	padding: 10px;
-	
-}
+
 .row{
 	display: flex;
 	
@@ -86,7 +73,7 @@ body{
 	background-repeat: no-repeat;
 	background-position: center;
 	display: flex;
-	padding: 20px 0px;
+	padding: 20px;
 }
 .banner-text{
 	font-family: 'Aleo', serif;
@@ -94,24 +81,25 @@ body{
 	padding: 0;
 	margin: 0;
 }
+.banner-link{
+	display: block;
+}
 .banner-bold{
 	font-weight: bold;
 }
 .block-title{
 	display: block;
 	font-family: 'Aleo', serif;
-	font-size: 2.7rem;
+	font-size: 4.7rem;
 	color: #353152;
-	
 	display: inline;
 	margin-bottom: 5px;
-	padding-right: 25px;
+	padding-left: 15px;
+	font-weight: bold;
 }
 .blk-title{
 	display: flex;
 	align-items: flex-end;
-	padding-bottom: 10px;
-	border-bottom: 2px solid #d0d0d0;
 }
 .block-title-disclaimer{
 	font-family: aleo-bold;
@@ -122,7 +110,23 @@ body{
 	margin-bottom: 5px;
 	padding-right: 75px
 }
+.blk-head-banner {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d0d0d0;
+    margin-bottom: 10px;
 
+}
+.block-title-banner{
+	display: block;
+	font-family: 'Aleo', serif;
+	font-size: 2rem;
+	color: #353152;
+	display: inline;
+	padding-left: 15px;
+	font-weight: bold;
+}
 h2{
 	color: #fff;
 	font-size: 2rem;
@@ -150,11 +154,13 @@ a.link-content{
 	border: none;
 	border-radius:100px;
 	padding: 5px ;
-	font-size: 1.2rem;
 	font-family: 'Open Sans', sans-serif;
 	display:flex;
 	flex-direction: row;
 	align-items: center;
+	margin-bottom: 50px;
+	margin-top: 10px;
+	font-size: 1.2rem;
 }
 .quote .quote-ico{
 	display: block;
@@ -178,25 +184,38 @@ a.link-content{
 }
 .quote .content{
 	display: block;
+	position: relative;
 	font-family: 'Aleo', serif;
-	font-size: 0.8rem;
+	font-size: 1.1rem;
 	padding: 15px;
 	color: #353152;
 	font-weight:bold ;
+	line-height: 22px;
 }
 .quote .content a{
 	color: #353152;
+	display: inline-block;
+	position: absolute;
+	bottom: 5px;
 }
-.md5{
-	width: 50%;
+.quote-notice{
+	/*background-color: #fab468;*/
+	background: #353152;
+	border: none;
+	border-radius:100px;
+	padding: 5px 15px ;
+	font-size: 1.2rem;
+	font-family: 'Open Sans', sans-serif;
+	display:inline-flex;
+	position: relative;
+	align-items: flex-start;
+	color: #ffffff;
 }
-.md7{
-	width: 70%;
-}
-.md3{
-	width: 30%;
+.quote-notice .link-notice{
+
 }
 .mark{
+	background-color: #dfdfdf;
 	border: 3px solid #353152;
 	padding: 10px 30px 10px 30px;
 	border-radius: 10px;
@@ -209,6 +228,8 @@ a.link-content{
 	list-style: none;
 	color: #353152;
 	font-size: 1.2rem;
+	padding: 0;
+	margin: 0;
 }
 .icon-list li{
 	padding: 20px 10px;
@@ -264,7 +285,7 @@ a.link-content{
 }
 .social-icos li .net{
 	color: #faa840;
-	font-size: 2rem;
+	font-size: 1.3rem;
 	text-decoration: none;
 }
 .f-menu{
@@ -283,4 +304,40 @@ a.link-content{
 .footer .copy p{
 	color: #ffffff;
 	font-size: 0.8rem;
+}
+@media (max-width: 575.98px) {
+	.quote{
+		font-size: 0.7rem;
+	}
+	.quote-notice{
+	font-size: 0.9rem;
+	}
+	.block-title{
+	font-size: 2.7rem;
+	}
+	.banner-text{
+	font-size: 1.2rem;
+	}
+	.block-quote{
+		font-size: 1rem;
+	}
+	.icon-list{
+		font-size: 0.9rem;
+	}
+	.quote .content{
+		font-size: 0.6rem;
+	}
+	.block-title-banner{
+	font-size: 1.7rem;
+	
+	}
+	.list-white {
+    font-size: 0.9rem;
+	}
+	.formula {
+    font-size: 0.9rem;
+	}
+	.text-small{
+		font-size: 0.6rem;
+	}
 }
