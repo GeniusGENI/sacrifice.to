@@ -141,6 +141,9 @@ p{
 	font-family: 'Aleo', serif;
 	font-weight: lighter;
 }
+strong{
+	font-weight: bold !important;
+}
 a.link-content{
 	display: contents;
 }
@@ -178,6 +181,10 @@ a.link-content{
 }
 .quote .content{
 	display: block;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 	font-family: 'Aleo', serif;
 	font-size: 0.8rem;
 	padding: 15px;
