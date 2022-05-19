@@ -1,7 +1,7 @@
 const DEFUALT_FORMAT = "seconds";
 
 const countDown = () => {
-  var countDownDate = new Date("May 14, 2022 00:00:00 UTC").getTime();
+  var countDownDate = new Date("June 1, 2022 00:00:00 UTC").getTime();
 
   const daysElement = document.querySelector(".days");
   const hoursElement = document.querySelector(".hours");
