@@ -30,7 +30,7 @@ const countDown = () => {
     if (distance < 0) {
       clearInterval(x);
       //   document.getElementById("demo").innerHTML = "EXPIRED";
-      var element = document.getElementById("counDown");
+      var element = document.getElementById("countDown");
       element.classList.add("visually-hidden");
     }
   }, 1000);
